@@ -74,7 +74,6 @@ const products = [
     name: "Johnnie Walker Blue Label 100cl",
     badge: "Best Seller",
     category: "whisky",
-    price: "UGX 990,000",
     image: jwBlueLabel,
     origin: "Scotland",
     abv: "40%",
@@ -85,7 +84,6 @@ const products = [
     name: "Johnnie Walker Black Label 12 Year 1000ml",
     badge: "Best Seller",
     category: "whisky",
-    price: "UGX 150,000",
     image: jwBlackLabel,
     origin: "Scotland",
     abv: "40%",
@@ -96,7 +94,6 @@ const products = [
     id: 3,
     name: "Chivas Regal XV Aged 15 Years",
     category: "whisky",
-    price: "UGX 235,000",
     image: chivas,
     origin: "Scotland",
     abv: "40%",
@@ -107,7 +104,6 @@ const products = [
     id: 4,
     name: "Grey Goose Vodka 100cl",
     category: "vodka",
-    price: "UGX 150,000",
     image: grey,
     origin: "France",
     abv: "40%",
@@ -118,7 +114,6 @@ const products = [
     name: "Clase Azul Tequila Reposado 750ml",
     badge: "Limited Edition",
     category: "tequila",
-    price: "UGX 120,000",
     image: chase,
     origin: "Mexico",
     abv: "40%",
@@ -128,7 +123,6 @@ const products = [
     id: 6,
     name: "Bombay Sapphire London Dry Gin 100cl",
     category: "gin",
-    price: "UGX 95,000",
     image: bombay,
     origin: "England",
     abv: "40%",
@@ -138,7 +132,6 @@ const products = [
     id: 7,
     name: "Hennessy VSOP Privilège Cognac",
     category: "cognac",
-    price: "UGX 250,000",
     image: hennessy,
     origin: "France",
     abv: "40%",
@@ -148,7 +141,6 @@ const products = [
     id: 8,
     name: "Moët & Chandon Brut 750ml",
     category: "champagne",
-    price: "UGX 250,000",
     image: moetB,
     origin: "France",
     abv: "12.0%",
@@ -158,7 +150,6 @@ const products = [
     id: 9,
     name: "Moët & Chandon Ice Impérial",
     category: "champagne",
-    price: "UGX 275,000",
     image: moet,
     origin: "France",
     abv: "12.0%",
@@ -168,7 +159,6 @@ const products = [
     id: 10,
     name: "Aberlour 12 Year Old Double Cask Matured",
     category: "whisky",
-    price: "UGX 235,000",
     image: aber,
     origin: "Scotland",
     abv: "40%",
@@ -179,7 +169,6 @@ const products = [
     id: 11,
     name: "Glenmorangie The Original 10 Years Old 100cl",
     category: "Whisky",
-    price: "UGX 255,000",
     image: glenmorangie,
     origin: "Scotland",
     abv: "40-43%",
@@ -190,7 +179,6 @@ const products = [
     id: 12,
     name: "Imperial Blue Superior Grain Whisky 75cl",
     category: "Whisky",
-    price: "UGX 30,000",
     image: imperial,
     origin: "India",
     abv: "42.8%",
@@ -201,7 +189,6 @@ const products = [
     id: 13,
     name: "Jack Daniel's Whiskey 100cl",
     category: "whiskey",
-    price: "UGX 125,000",
     image: jack,
     origin: "United States",
     abv: "40%",
@@ -212,7 +199,6 @@ const products = [
     id: 14,
     name: "Jameson Triple Distilled Irish Whiskey",
     category: "whiskey",
-    price: "UGX 250,000",
     image: jameson,
     origin: "Ireland",
     abv: "40%",
@@ -223,7 +209,6 @@ const products = [
     id: 15,
     name: "Olmeca Tequila (Blanco/Reposado)",
     category: "tequila",
-    price: "UGX 118,000",
     image: olmeca,
     origin: "Mexico",
     abv: "35-40%",
@@ -234,7 +219,6 @@ const products = [
     id: 16,
     name: "Martell VSOP Cognac 100cl",
     category: "cognac",
-    price: "UGX 325,000",
     image: martell,
     origin: "France",
     abv: "40%",
@@ -245,7 +229,6 @@ const products = [
     id: 17,
     name: "Rémy Martin VSOP Cognac Fine Champagne",
     category: "cognac",
-    price: "UGX 295,000",
     image: remy,
     origin: "France",
     abv: "40%",
@@ -256,7 +239,6 @@ const products = [
     id: 18,
     name: "Southern Comfort Original 1000ml",
     category: "liqueur",
-    price: "UGX 95,000",
     image: southern,
     origin: "United States",
     abv: "30-35%",
@@ -267,7 +249,6 @@ const products = [
     id: 19,
     name: "Veuve Clicquot Yellow Label Brut 750ml",
     category: "champagne",
-    price: "UGX 285,000",
     image: veuve,
     origin: "France",
     abv: "12.0%",
@@ -278,7 +259,6 @@ const products = [
     id: 20,
     name: "JP Chenet Ice",
     category: "sparkling wine",
-    price: "UGX 48,000",
     image: jpc,
     origin: "France",
     abv: "11%",
@@ -289,7 +269,6 @@ const products = [
     id: 21,
     name: "4th Street Wine 75cl",
     category: "wine",
-    price: "UGX 30,000",
     image: fourth,
     origin: "South Africa",
     abv: "8-12%",
@@ -300,7 +279,6 @@ const products = [
     id: 22,
     name: "Nederburg Wines 750ml",
     category: "still wine",
-    price: "UGX 50,000",
     image: nederburg,
     origin: "South Africa",
     abv: "11-14%",
@@ -311,7 +289,6 @@ const products = [
     id: 23,
     name: "Heineken Original",
     category: "beer",
-    price: "UGX 161,000",
     image: heineken,
     origin: "Netherlands",
     abv: "5.0%",
@@ -322,7 +299,6 @@ const products = [
     id: 24,
     name: "Savanna Dry Premium Cider 330ml",
     category: "cider",
-    price: "UGX 196,000",
     image: savanna,
     origin: "South Africa",
     abv: "6%",
@@ -333,7 +309,6 @@ const products = [
     id: 25,
     name: "Red Bull Energy Drink 250ml",
     category: "energy drink",
-    price: "UGX 138,000",
     image: redBull,
     origin: "Austria",
     abv: "0.0%",
@@ -344,7 +319,6 @@ const products = [
     id: 26,
     name: "Heineken Cans 500ml",
     category: "beer",
-    price: "UGX 8,000",
     image: heinekenCans,
     origin: "Netherlands",
     abv: "5.0%",
@@ -355,7 +329,6 @@ const products = [
     id: 27,
     name: "The Singleton of Dufftown 18 Years",
     category: "whisky",
-    price: "UGX 250,000",
     image: singleton,
     origin: "Scotland",
     abv: "40%",
@@ -366,7 +339,6 @@ const products = [
     id: 28,
     name: "Robertson Winery Natural Sweet Wine 750ml",
     category: "still wine",
-    price: "UGX 38,000",
     image: robertson,
     origin: "South Africa",
     abv: "8.0-12.5%",
@@ -377,7 +349,6 @@ const products = [
     id: 29,
     name: "Malibu Caribbean Rum with Coconut Liqueur 100cl",
     category: "liqueur",
-    price: "UGX 95,000",
     image: malibu,
     origin: "Barbados",
     abv: "21%",
@@ -388,7 +359,6 @@ const products = [
     id: 30,
     name: "The Singleton of Dufftown 12 & 15",
     category: "whisky",
-    price: "UGX 195,000",
     image: singleton12,
     origin: "Scotland",
     abv: "40%",
@@ -399,7 +369,6 @@ const products = [
     id: 31,
     name: "Bacardi Carta Blanca (Superior White Rum) & (Superior Gold Rum) 100cl",
     category: "rum",
-    price: "UGX 70,000",
     image: bacardi,
     origin: "Puerto Rico (Originally Cuba)",
     abv: "40%",
@@ -578,7 +547,6 @@ const LuxurySpiritsWebsite = () => {
   // Filter state
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
-  const [priceRange, setPriceRange] = useState([0, 1000000]);
   const [searchSuggestions, setSearchSuggestions] = useState([]);
 
   // Feature state
@@ -682,13 +650,7 @@ const LuxurySpiritsWebsite = () => {
     setSearchQuery(sanitizedQuery);
 
     // ... rest of the logic remains the same, using sanitizedQuery if needed ...
-    const priceMatch = sanitizedQuery.match(
-      /(under|below|less than)\s*(\d+)k?/i
-    );
-
-    if (priceMatch) {
-      // ... price match logic
-    }
+    
 
     if (sanitizedQuery.length > 0) {
       const suggestions = products
@@ -702,7 +664,7 @@ const LuxurySpiritsWebsite = () => {
       setShowSuggestions(true);
     } else {
       setShowSuggestions(false);
-      setPriceRange([0, 1000000]);
+      
     }
   }, []);
 
@@ -714,11 +676,9 @@ const LuxurySpiritsWebsite = () => {
       const matchesSearch = product.name
         .toLowerCase()
         .includes(searchQuery.toLowerCase());
-      const price = parseInt(product.price.replace(/[^\d]/g, ""));
-      const matchesPrice = price >= priceRange[0] && price <= priceRange[1];
-      return matchesCategory && matchesSearch && matchesPrice;
+      return matchesCategory && matchesSearch;
     });
-  }, [selectedCategory, searchQuery, priceRange]);
+  }, [selectedCategory, searchQuery]);
 
   // Navigation callback for Hero (and other components)
   const handleNavigation = useCallback(
@@ -814,9 +774,7 @@ const LuxurySpiritsWebsite = () => {
                     <p className="text-amber-300 text-sm mb-2">
                       {product.origin} • {product.abv}
                     </p>
-                    <p className="text-4xl font-bold text-amber-400">
-                      {product.price}
-                    </p>
+                    
                   </div>
                   <button
                     onClick={(e) => {
@@ -1089,9 +1047,7 @@ const LuxurySpiritsWebsite = () => {
                     {product.description}
                   </p>
                   <div className="flex justify-between items-center gap-3">
-                    <span className="text-2xl font-bold text-amber-400">
-                      {product.price}
-                    </span>
+                    
                     <button
                       onClick={() => addToCart(product)}
                       className="bg-amber-600 hover:bg-amber-500 text-white px-4 py-2 rounded-lg transition-colors flex items-center space-x-2"
@@ -1161,78 +1117,69 @@ const LuxurySpiritsWebsite = () => {
           prestigious spirits
         </p>
 
-        <div className="max-w-2xl mx-auto mb-8 space-y-6">
-          <div>
-            <label className="block text-amber-200 mb-2 text-sm">
-              Price Range: UGX {priceRange[0].toLocaleString()} - UGX{" "}
-              {priceRange[1].toLocaleString()}
-            </label>
-            <input
-              type="range"
-              min="0"
-              max="1000000"
-              step="10000"
-              value={priceRange[1]}
-              onChange={(e) => setPriceRange([0, parseInt(e.target.value)])}
-              className="w-full h-2 bg-amber-800 rounded-lg appearance-none cursor-pointer accent-amber-500"
-            />
+        {/* Unified Search & Filter Section */}
+        <div className="max-w-5xl mx-auto mb-12 space-y-8">
+          <div className="max-w-2xl mx-auto relative group">
+            <div className="absolute -inset-1 bg-gradient-to-r from-amber-600 to-amber-900 rounded-xl blur opacity-25 group-hover:opacity-50 transition duration-500"></div>
+            <div className="relative">
+              <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-amber-400 w-5 h-5" />
+              <input
+                type="text"
+                placeholder="Try 'whisky under 200k' or search by name..."
+                value={searchQuery}
+                onChange={(e) => handleSearchChange(e.target.value)}
+                onFocus={() => {
+                  if (searchQuery.length > 0) setShowSuggestions(true);
+                }}
+                onBlur={() => setTimeout(() => setShowSuggestions(false), 200)}
+                className="w-full bg-black/80 backdrop-blur-sm border border-amber-800/50 rounded-xl pl-12 pr-4 py-4 text-amber-100 placeholder-amber-600/70 focus:outline-none focus:border-amber-500 transition-colors shadow-inner"
+              />
+
+              {showSuggestions && searchSuggestions.length > 0 && (
+                <div className="absolute top-full left-0 right-0 mt-3 bg-black/95 backdrop-blur-md border border-amber-800/50 rounded-xl overflow-hidden z-50 shadow-2xl shadow-black">
+                  {searchSuggestions.map((product) => (
+                    <button
+                      key={product.id}
+                      onClick={() => {
+                        setSearchQuery(product.name);
+                        setShowSuggestions(false);
+                      }}
+                      className="w-full flex items-center space-x-4 p-4 hover:bg-amber-900/30 transition-all border-b border-amber-900/20 last:border-0"
+                    >
+                      <div className="p-2 bg-white/5 rounded-lg">
+                        <img
+                          src={product.image}
+                          alt={product.name}
+                          className="w-8 h-10 object-contain drop-shadow-md"
+                        />
+                      </div>
+                      <div className="text-left flex-1">
+                        <p className="text-amber-100 font-medium">{product.name}</p>
+                      </div>
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
 
-          <div className="relative">
-            <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-amber-400 w-5 h-5" />
-            <input
-              type="text"
-              placeholder="Try 'whisky under 200k' or search by name..."
-              value={searchQuery}
-              onChange={(e) => handleSearchChange(e.target.value)}
-              onFocus={() => {
-                if (searchQuery.length > 0) setShowSuggestions(true);
-              }}
-              onBlur={() => setTimeout(() => setShowSuggestions(false), 200)}
-              className="w-full bg-black border border-amber-800 rounded-lg pl-12 pr-4 py-3 text-amber-100 placeholder-amber-600 focus:outline-none focus:border-amber-600"
-            />
-
-            {showSuggestions && searchSuggestions.length > 0 && (
-              <div className="absolute top-full left-0 right-0 mt-2 bg-black border border-amber-800 rounded-lg overflow-hidden z-10">
-                {searchSuggestions.map((product) => (
-                  <button
-                    key={product.id}
-                    onClick={() => {
-                      setSearchQuery(product.name);
-                      setShowSuggestions(false);
-                    }}
-                    className="w-full flex items-center space-x-3 p-3 hover:bg-amber-900/20 transition-colors"
-                  >
-                    <img
-                      src={product.image}
-                      alt={product.name}
-                      className="w-10 h-10 object-contain"
-                    />
-                    <div className="text-left flex-1">
-                      <p className="text-amber-100 text-sm">{product.name}</p>
-                      <p className="text-amber-400 text-xs">{product.price}</p>
-                    </div>
-                  </button>
-                ))}
-              </div>
-            )}
+          <div className="relative w-full before:absolute before:left-0 before:top-0 before:bottom-0 before:w-12 before:bg-gradient-to-r before:from-black before:to-transparent before:z-10 after:absolute after:right-0 after:top-0 after:bottom-0 after:w-12 after:bg-gradient-to-l after:from-black after:to-transparent after:z-10">
+            <div className="flex overflow-x-auto hide-scrollbar gap-4 px-4 pb-4 pt-2 snap-x justify-start md:justify-center scroll-smooth">
+              {categories.map((cat) => (
+                <button
+                  key={cat.id}
+                  onClick={() => setSelectedCategory(cat.id)}
+                  className={`flex-none snap-center px-8 py-3 rounded-full font-medium transition-all duration-300 uppercase tracking-wider text-sm ${
+                    selectedCategory === cat.id
+                      ? "bg-gradient-to-r from-amber-600 to-amber-500 text-white shadow-[0_0_20px_rgba(217,119,6,0.4)] scale-105 border-transparent"
+                      : "bg-black/50 text-amber-300 hover:bg-amber-900/40 hover:text-amber-100 border border-amber-800/50 hover:border-amber-500/50 backdrop-blur-sm"
+                  }`}
+                >
+                  {cat.name}
+                </button>
+              ))}
+            </div>
           </div>
-        </div>
-
-        <div className="flex flex-wrap justify-center gap-3 mb-12">
-          {categories.map((cat) => (
-            <button
-              key={cat.id}
-              onClick={() => setSelectedCategory(cat.id)}
-              className={`px-6 py-2 rounded-full font-medium transition-all ${
-                selectedCategory === cat.id
-                  ? "bg-amber-600 text-white"
-                  : "bg-amber-900/20 text-amber-300 hover:bg-amber-800/30 border border-amber-800/30"
-              }`}
-            >
-              {cat.name}
-            </button>
-          ))}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -1295,9 +1242,7 @@ const LuxurySpiritsWebsite = () => {
                   {product.description}
                 </p>
                 <div className="flex justify-between items-center gap-3">
-                  <span className="text-2xl font-bold text-amber-400">
-                    {product.price}
-                  </span>
+                  
                   <button
                     onClick={() => addToCart(product)}
                     className="bg-amber-600 hover:bg-amber-500 text-white px-4 py-2 rounded-lg transition-colors flex items-center space-x-2"
@@ -1373,9 +1318,7 @@ const LuxurySpiritsWebsite = () => {
                     {product.description}
                   </p>
                   <div className="flex justify-between items-center gap-3">
-                    <span className="text-2xl font-bold text-amber-400">
-                      {product.price}
-                    </span>
+                    
                     <button
                       onClick={() => addToCart(product)}
                       className="flex-1 bg-amber-600 hover:bg-amber-500 text-white px-4 py-2 rounded-lg transition-colors flex items-center justify-center space-x-2"
@@ -1481,9 +1424,7 @@ const LuxurySpiritsWebsite = () => {
                     </div>
                   </div>
                   <div className="text-right">
-                    <p className="text-2xl font-bold text-amber-400 mb-4">
-                      {item.price}
-                    </p>
+                    
                     <button
                       onClick={() => removeFromCart(index)}
                       className="text-red-400 hover:text-red-300 flex items-center space-x-2"
@@ -1526,11 +1467,7 @@ const LuxurySpiritsWebsite = () => {
     const [customerPhone, setCustomerPhone] = useState("");
     const [customerAddress, setCustomerAddress] = useState("");
 
-    const total = cartItems.reduce((sum, item) => {
-      const price = parseInt(item.price.replace(/[^\d]/g, ""));
-      const quantity = item.quantity || 1;
-      return sum + price * quantity;
-    }, 0);
+    
 
     const handlePlaceOrder = () => {
       if (
@@ -1545,9 +1482,9 @@ const LuxurySpiritsWebsite = () => {
 
       const orderMessage = `*New Order - Kingsland Distributors*\n\n*Customer:* ${customerName}\n*Phone:* ${customerPhone}\n*Address:* ${customerAddress}\n\n*Items:*\n${cartItems
         .map(
-          (item) => `• ${item.name} (x${item.quantity || 1}) - ${item.price}`
+          (item) => `• ${item.name} (x${item.quantity || 1})`
         )
-        .join("\n")}\n\n*Total:* UGX ${total.toLocaleString()}`;
+        .join("\n")}`;
 
       const whatsappNumber = "256706119011";
       const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
@@ -1596,7 +1533,7 @@ const LuxurySpiritsWebsite = () => {
                           {item.category}
                         </p>
                       </div>
-                      <p className="text-amber-400 font-bold">{item.price}</p>
+                      
                     </div>
                   ))}
                 </div>
