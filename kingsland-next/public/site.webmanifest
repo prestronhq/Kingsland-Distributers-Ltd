@@ -1,0 +1,40 @@
+{
+  "name": "Kingsland Distributors",
+  "short_name": "Kingsland",
+  "description": "Uganda's premier distributor of premium spirits, whisky, cognac, champagne, and wines.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#D97706",
+  "lang": "en-UG",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Browse Products",
+      "url": "/products",
+      "description": "Browse our premium spirits collection"
+    },
+    {
+      "name": "Contact Us",
+      "url": "/contact",
+      "description": "Get in touch with Kingsland Distributors"
+    }
+  ]
+}
