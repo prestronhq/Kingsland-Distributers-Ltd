@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+/* ── Design tokens ───────────────────────────────────────────────── */
+@theme {
+  /* Brand colours */
+  --color-brand-gold: #d97706;
+  --color-brand-gold-light: #f59e0b;
+  --color-brand-gold-hover: #b45309;
+  --color-brand-dark: #000000;
+  --color-brand-surface: #1a0a00;
+
+  /* Typography */
+  --font-serif: var(--font-playfair), Georgia, serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+
+  /* Animation durations */
+  --duration-fast: 150ms;
+  --duration-base: 200ms;
+  --duration-slow: 300ms;
+}
+
+/* ── Base styles ─────────────────────────────────────────────────── */
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Focus styles — accessible, on-brand ────────────────────────── */
+:focus-visible {
+  outline: 2px solid #d97706;
+  outline-offset: 2px;
+}
+
+/* Remove outline for mouse users */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ── Utilities ───────────────────────────────────────────────────── */
+
+/* Hide scrollbar while keeping scroll functionality */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* ── Custom animations ───────────────────────────────────────────── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse-gold {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(217, 119, 6, 0.4); }
+  50%       { box-shadow: 0 0 0 8px rgba(217, 119, 6, 0); }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.animate-fade-in {
+  animation: fadeIn var(--duration-slow) ease-out both;
+}
+
+.animate-slide-in-up {
+  animation: slideInUp var(--duration-slow) ease-out both;
+}
+
+.animate-pulse-gold {
+  animation: pulse-gold 2s ease-in-out infinite;
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Radix Dialog animation */
+@keyframes dialog-overlay-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes dialog-content-in {
+  from { opacity: 0; transform: translate(-50%, -48%) scale(0.96); }
+  to   { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+
+.animate-in {
+  animation: dialog-overlay-in var(--duration-base) ease-out both;
+}
+
+/* ── Reduced motion — respect system preferences ─────────────────── */
+/* Must come AFTER animation declarations so it takes precedence */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* Specific overrides for JS-driven animations (HeroSection checks this via matchMedia) */
+  .animate-fade-in,
+  .animate-slide-in-up,
+  .animate-pulse-gold {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* ── Mobile bottom nav spacing ───────────────────────────────────── */
+@media (max-width: 767px) {
+  body {
+    padding-bottom: 64px;
+  }
+}
+
+/* ── Selection colour ────────────────────────────────────────────── */
+::selection {
+  background-color: rgba(217, 119, 6, 0.3);
+  color: #ffffff;
+}
