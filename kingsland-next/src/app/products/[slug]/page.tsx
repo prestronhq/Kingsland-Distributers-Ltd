@@ -10,6 +10,9 @@ import { ProductCard } from '@/components/products/ProductCard'
 import { Badge } from '@/components/ui/Badge'
 import { AddToCartSection } from '@/components/products/AddToCartSection'
 
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.kingslanduganda.com'
+
 // SSG: pre-render all 31 products at build time
 export function generateStaticParams() {
   return products.map((p) => ({ slug: p.slug }))
@@ -27,14 +30,14 @@ export async function generateMetadata(props: {
     title: `${product.name} — Buy in Uganda`,
     description: `${product.description} Available from Kingsland Distributors, Kampala. ${product.origin} · ${product.abv} · ${product.volume}`,
     alternates: {
-      canonical: `https://kingslanduganda.com/products/${slug}`,
+      canonical: `${SITE_URL}/products/${slug}`,
     },
     openGraph: {
       title: `${product.name} | Kingsland Distributors`,
       description: product.description,
       images: [
         {
-          url: `https://kingslanduganda.com${product.image}`,
+          url: `${SITE_URL}${product.image}`,
           width: 800,
           height: 800,
           alt: product.altText,

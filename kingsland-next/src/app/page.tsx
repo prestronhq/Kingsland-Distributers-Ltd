@@ -10,8 +10,8 @@ import { StatsCounter } from '@/components/home/StatsCounter'
 export const metadata: Metadata = {
   title: 'Kingsland Distributors | Premium Spirits in Uganda',
   description:
-    "Uganda's premier distributor of Johnnie Walker, Hennessy, Moët & Chandon, and more. Order premium spirits in Kampala via WhatsApp.",
-  alternates: { canonical: 'https://kingslanduganda.com' },
+    "Uganda's premier distributor of premium whisky, cognac & champagne. Order in Kampala via WhatsApp.",
+  alternates: { canonical: 'https://www.kingslanduganda.com' },
 }
 
 const stats = [

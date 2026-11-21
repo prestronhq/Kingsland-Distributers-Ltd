@@ -3,7 +3,7 @@ import type { MetadataRoute } from 'next'
 import { products } from '@/lib/products'
 import { categories } from '@/lib/categories'
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://kingslanduganda.com'
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.kingslanduganda.com'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [

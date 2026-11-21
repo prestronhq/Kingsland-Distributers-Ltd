@@ -23,17 +23,17 @@ const inter = Inter({
   display: 'swap',
 })
 
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.kingslanduganda.com'
+
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ??
-    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://kingslanduganda.com')
-  ),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: 'Kingsland Distributors | Premium Spirits in Uganda',
     template: '%s | Kingsland Distributors Uganda',
   },
   description:
-    "Uganda's premier distributor of premium spirits, whisky, cognac, champagne, and wines. Based in Kampala's Industrial Area. Order via WhatsApp.",
+    "Uganda's premier distributor of premium whisky, cognac & champagne. Order in Kampala via WhatsApp.",
   keywords: [
     // Brand & identity
     'Kingsland Distributors',
@@ -97,18 +97,28 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_UG',
-    url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://kingslanduganda.com',
+    url: SITE_URL,
     siteName: 'Kingsland Distributors',
     title: 'Kingsland Distributors | Premium Spirits in Uganda',
     description:
-      "Uganda's premier distributor of Johnnie Walker, Hennessy, Moët & Chandon, and more. Order premium spirits in Kampala via WhatsApp.",
+      "Uganda's premier distributor of premium whisky, cognac & champagne. Order in Kampala via WhatsApp.",
+    images: [
+      {
+        url: `${SITE_URL}/images/og/kingsland-og-default.jpg`,
+        width: 1200,
+        height: 630,
+        type: 'image/jpeg',
+        alt: 'Kingsland Distributors — Premium Spirits in Uganda',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     site: '@KingslandUG',
     title: 'Kingsland Distributors | Premium Spirits in Uganda',
     description:
-      "Uganda's premier distributor of Johnnie Walker, Hennessy, Moët & Chandon, and more. Order premium spirits in Kampala via WhatsApp.",
+      "Uganda's premier distributor of premium whisky, cognac & champagne. Order in Kampala via WhatsApp.",
+    images: [`${SITE_URL}/images/og/kingsland-og-default.jpg`],
   },
   robots: { index: true, follow: true },
   verification: {
@@ -132,8 +142,8 @@ const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'Kingsland Distributors Ltd',
-  url: 'https://kingslanduganda.com',
-  logo: 'https://kingslanduganda.com/images/kingsland-logo.png',
+  url: SITE_URL,
+  logo: `${SITE_URL}/images/kingsland-logo.png`,
   foundingDate: '2010',
   contactPoint: {
     '@type': 'ContactPoint',
