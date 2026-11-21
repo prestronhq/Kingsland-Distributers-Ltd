@@ -84,11 +84,11 @@ export default function Image() {
         <div
           style={{
             color: '#d97706',
-            fontSize: '16px',
+            fontSize: '15px',
             fontWeight: 600,
-            letterSpacing: '0.3em',
+            letterSpacing: '0.25em',
             textTransform: 'uppercase',
-            marginBottom: '24px',
+            marginBottom: '16px',
           }}
         >
           Uganda&apos;s Premier Spirit Distributor
@@ -99,14 +99,14 @@ export default function Image() {
           style={{
             display: 'flex',
             alignItems: 'center',
-            gap: '20px',
-            marginBottom: '20px',
+            gap: '18px',
+            marginBottom: '10px',
           }}
         >
           {/* Crown icon — SVG inline */}
           <svg
-            width="56"
-            height="56"
+            width="50"
+            height="50"
             viewBox="0 0 24 24"
             fill="none"
             stroke="#d97706"
@@ -122,7 +122,7 @@ export default function Image() {
           <div
             style={{
               color: '#ffffff',
-              fontSize: '64px',
+              fontSize: '56px',
               fontWeight: 700,
               letterSpacing: '-0.01em',
               lineHeight: 1,
@@ -136,11 +136,11 @@ export default function Image() {
         <div
           style={{
             color: 'rgba(255,255,255,0.65)',
-            fontSize: '26px',
+            fontSize: '22px',
             fontWeight: 400,
             letterSpacing: '0.08em',
             textTransform: 'uppercase',
-            marginBottom: '36px',
+            marginBottom: '20px',
           }}
         >
           Distributors
@@ -149,10 +149,10 @@ export default function Image() {
         {/* Divider */}
         <div
           style={{
-            width: '120px',
+            width: '100px',
             height: '1px',
             background: 'linear-gradient(90deg, transparent, #d97706, transparent)',
-            marginBottom: '36px',
+            marginBottom: '22px',
           }}
         />
 
@@ -160,21 +160,22 @@ export default function Image() {
         <div
           style={{
             display: 'flex',
-            gap: '12px',
+            gap: '10px',
             flexWrap: 'wrap',
             justifyContent: 'center',
             maxWidth: '900px',
+            marginBottom: '26px',
           }}
         >
           {['Whisky', 'Cognac', 'Champagne', 'Vodka', 'Gin', 'Wine', 'Tequila'].map((cat) => (
             <div
               key={cat}
               style={{
-                padding: '8px 20px',
+                padding: '6px 16px',
                 border: '1px solid rgba(217, 119, 6, 0.3)',
                 borderRadius: '100px',
                 color: 'rgba(255,255,255,0.6)',
-                fontSize: '17px',
+                fontSize: '15px',
                 letterSpacing: '0.05em',
               }}
             >
@@ -183,13 +184,33 @@ export default function Image() {
           ))}
         </div>
 
+        {/* Conversion CTA Button */}
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '10px',
+            backgroundColor: '#d97706',
+            color: '#000000',
+            padding: '12px 32px',
+            borderRadius: '9999px',
+            fontSize: '18px',
+            fontWeight: 700,
+            letterSpacing: '0.04em',
+            boxShadow: '0 8px 24px rgba(217, 119, 6, 0.35)',
+          }}
+        >
+          <span>Order Now via WhatsApp</span>
+          <span style={{ fontSize: '20px' }}>→</span>
+        </div>
+
         {/* Footer URL */}
         <div
           style={{
             position: 'absolute',
-            bottom: '42px',
+            bottom: '26px',
             color: 'rgba(255,255,255,0.28)',
-            fontSize: '15px',
+            fontSize: '14px',
             letterSpacing: '0.12em',
             textTransform: 'lowercase',
           }}
