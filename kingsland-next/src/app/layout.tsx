@@ -25,7 +25,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ?? 'https://kingslanduganda.com'
+    process.env.NEXT_PUBLIC_SITE_URL ??
+    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://kingslanduganda.com')
   ),
   title: {
     default: 'Kingsland Distributors | Premium Spirits in Uganda',
@@ -96,19 +97,11 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_UG',
-    url: 'https://kingslanduganda.com',
+    url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://kingslanduganda.com',
     siteName: 'Kingsland Distributors',
     title: 'Kingsland Distributors | Premium Spirits in Uganda',
     description:
       "Uganda's premier distributor of Johnnie Walker, Hennessy, Moët & Chandon, and more. Order premium spirits in Kampala via WhatsApp.",
-    images: [
-      {
-        url: '/images/og/kingsland-og-default.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Kingsland Distributors — Premium Spirits in Uganda',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
@@ -116,7 +109,6 @@ export const metadata: Metadata = {
     title: 'Kingsland Distributors | Premium Spirits in Uganda',
     description:
       "Uganda's premier distributor of Johnnie Walker, Hennessy, Moët & Chandon, and more. Order premium spirits in Kampala via WhatsApp.",
-    images: ['/images/og/kingsland-og-default.jpg'],
   },
   robots: { index: true, follow: true },
   verification: {
