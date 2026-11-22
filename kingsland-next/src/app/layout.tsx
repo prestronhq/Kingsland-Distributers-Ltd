@@ -105,6 +105,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: `${SITE_URL}/opengraph-image`,
+        secureUrl: `${SITE_URL}/opengraph-image`,
         width: 1200,
         height: 630,
         type: 'image/png',
