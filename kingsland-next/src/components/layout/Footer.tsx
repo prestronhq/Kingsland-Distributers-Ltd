@@ -117,35 +117,28 @@ export function Footer() {
               </li>
             </ul>
 
-            {/* Social */}
-            <div className="flex gap-3 mt-4">
-              <a
-                href="https://www.facebook.com/kingslanddistributors"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Follow us on Facebook"
-                className="w-8 h-8 flex items-center justify-center rounded-full border border-white/20 text-white/60 hover:border-amber-500 hover:text-amber-400 transition-colors text-xs font-bold"
-              >
-                f
-              </a>
-              <a
-                href="https://www.instagram.com/kingslanddistributors"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Follow us on Instagram"
-                className="w-8 h-8 flex items-center justify-center rounded-full border border-white/20 text-white/60 hover:border-amber-500 hover:text-amber-400 transition-colors text-xs"
-              >
-                ig
-              </a>
-              <a
-                href={`https://wa.me/${WHATSAPP}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Chat with us on WhatsApp"
-                className="w-8 h-8 flex items-center justify-center rounded-full border border-white/20 text-white/60 hover:border-green-500 hover:text-green-400 transition-colors text-xs"
-              >
-                wa
-              </a>
+            {/* Projects */}
+            <div className="mt-5 pt-4 border-t border-white/10">
+              <h4 className="text-white font-semibold mb-2.5 text-xs uppercase tracking-wider text-amber-400">
+                Projects
+              </h4>
+              <ul className="space-y-1.5">
+                {[
+                  { label: 'Corporate & Event Supply', href: '/contact' },
+                  { label: 'Hospitality & Bar Distribution', href: '/about' },
+                  { label: 'Private Cellar Curation', href: '/products' },
+                  { label: 'Wholesale Orders', href: '/contact' },
+                ].map((item) => (
+                  <li key={item.label}>
+                    <Link
+                      href={item.href}
+                      className="text-white/60 hover:text-amber-400 text-xs transition-colors block"
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>

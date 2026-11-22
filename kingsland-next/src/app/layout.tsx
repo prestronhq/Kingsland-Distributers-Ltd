@@ -104,8 +104,8 @@ export const metadata: Metadata = {
       "Uganda's premier distributor of premium whisky, cognac & champagne. Order in Kampala via WhatsApp.",
     images: [
       {
-        url: `${SITE_URL}/opengraph-image`,
-        secureUrl: `${SITE_URL}/opengraph-image`,
+        url: `${SITE_URL}/images/og/kingsland-og.png`,
+        secureUrl: `${SITE_URL}/images/og/kingsland-og.png`,
         width: 1200,
         height: 630,
         type: 'image/png',
@@ -119,7 +119,7 @@ export const metadata: Metadata = {
     title: 'Kingsland Distributors | Premium Spirits in Uganda',
     description:
       "Uganda's premier distributor of premium whisky, cognac & champagne. Order in Kampala via WhatsApp.",
-    images: [`${SITE_URL}/opengraph-image`],
+    images: [`${SITE_URL}/images/og/kingsland-og.png`],
   },
   robots: { index: true, follow: true },
   verification: {

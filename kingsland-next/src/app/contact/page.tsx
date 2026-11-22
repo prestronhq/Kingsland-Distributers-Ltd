@@ -149,17 +149,34 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Google Maps embed placeholder */}
-            <div className="bg-neutral-900 border border-white/10 rounded-xl overflow-hidden aspect-video">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.745577773407!2d32.5817!3d0.3131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMCvCsDE4JzQ3LjIiTiAzMsKwMzQnNTQuMiJF!5e0!3m2!1sen!2sug!4v1234567890"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Kingsland Distributors location on Google Maps"
-              />
+            {/* Google Maps Location */}
+            <div className="bg-neutral-900 border border-white/10 rounded-xl overflow-hidden flex flex-col">
+              <div className="relative w-full h-64 sm:h-80 bg-neutral-950">
+                <iframe
+                  src="https://maps.google.com/maps?q=6th+Street+Industrial+Area,+Kampala,+Uganda&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  width="100%"
+                  height="100%"
+                  className="w-full h-full border-0"
+                  loading="lazy"
+                  allowFullScreen
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Kingsland Distributors location on Google Maps"
+                />
+              </div>
+              <div className="p-3.5 bg-neutral-900/90 border-t border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <span className="text-xs text-white/60 flex items-center gap-1.5">
+                  <MapPin className="w-3.5 h-3.5 text-amber-500 shrink-0" aria-hidden="true" />
+                  6th Street Industrial Area, Kampala
+                </span>
+                <a
+                  href="https://maps.google.com/?q=6th+Street+Industrial+Area,+Kampala,+Uganda"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-amber-400 hover:text-amber-300 font-medium underline flex items-center gap-1 shrink-0"
+                >
+                  Open in Google Maps &rarr;
+                </a>
+              </div>
             </div>
           </div>
 
