@@ -1,9 +1,22 @@
 'use client'
 // src/components/layout/Footer.tsx
 import Link from 'next/link'
-import { Crown, Phone, Mail, MapPin } from 'lucide-react'
+import { Crown, Phone, Mail, MapPin, Facebook, Instagram } from 'lucide-react'
 
 const WHATSAPP = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? '256706119011'
+
+function WhatsAppIcon({ className = 'w-4 h-4' }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className={className}
+      aria-hidden="true"
+    >
+      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.63C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.07C9.36 7.07 9.09 7.14 8.86 7.38C8.63 7.63 7.98 8.24 7.98 9.48C7.98 10.73 8.89 11.93 9.02 12.1C9.15 12.27 10.8 14.82 13.33 15.91C13.93 16.17 14.4 16.33 14.77 16.44C15.38 16.64 15.93 16.61 16.37 16.54C16.86 16.47 17.87 15.93 18.08 15.33C18.29 14.73 18.29 14.22 18.23 14.12C18.16 14.01 18 13.95 17.74 13.82C17.48 13.7 16.19 13.06 15.95 12.98C15.71 12.89 15.54 12.85 15.37 13.1C15.2 13.35 14.71 13.92 14.56 14.1C14.41 14.27 14.26 14.29 14 14.16C13.74 14.04 12.89 13.76 11.89 12.87C11.11 12.17 10.58 11.31 10.43 11.05C10.28 10.8 10.41 10.66 10.54 10.53C10.66 10.42 10.8 10.23 10.93 10.08C11.06 9.93 11.1 9.82 11.19 9.65C11.27 9.49 11.23 9.34 11.17 9.21C11.1 9.09 10.62 7.9 10.41 7.42C10.22 6.95 10.02 7.01 9.87 7C9.72 7 9.54 7 9.53 7.07Z" />
+    </svg>
+  )
+}
 
 export function Footer() {
   const year = new Date().getFullYear()
@@ -117,28 +130,35 @@ export function Footer() {
               </li>
             </ul>
 
-            {/* Projects */}
-            <div className="mt-5 pt-4 border-t border-white/10">
-              <h4 className="text-white font-semibold mb-2.5 text-xs uppercase tracking-wider text-amber-400">
-                Projects
-              </h4>
-              <ul className="space-y-1.5">
-                {[
-                  { label: 'Corporate & Event Supply', href: '/contact' },
-                  { label: 'Hospitality & Bar Distribution', href: '/about' },
-                  { label: 'Private Cellar Curation', href: '/products' },
-                  { label: 'Wholesale Orders', href: '/contact' },
-                ].map((item) => (
-                  <li key={item.label}>
-                    <Link
-                      href={item.href}
-                      className="text-white/60 hover:text-amber-400 text-xs transition-colors block"
-                    >
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+            {/* Social Icons */}
+            <div className="flex items-center gap-3 mt-5">
+              <a
+                href="https://www.facebook.com/profile.php?id=61590770146071"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow Kingsland Distributors on Facebook"
+                className="w-9 h-9 flex items-center justify-center rounded-full border border-white/20 text-white/70 hover:border-amber-500 hover:text-amber-400 hover:bg-amber-500/10 transition-all"
+              >
+                <Facebook className="w-4 h-4" aria-hidden="true" />
+              </a>
+              <a
+                href="https://www.instagram.com/kingslanddistributors/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow Kingsland Distributors on Instagram"
+                className="w-9 h-9 flex items-center justify-center rounded-full border border-white/20 text-white/70 hover:border-amber-500 hover:text-amber-400 hover:bg-amber-500/10 transition-all"
+              >
+                <Instagram className="w-4 h-4" aria-hidden="true" />
+              </a>
+              <a
+                href={`https://wa.me/${WHATSAPP}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Chat with Kingsland Distributors on WhatsApp"
+                className="w-9 h-9 flex items-center justify-center rounded-full border border-white/20 text-white/70 hover:border-green-500 hover:text-green-400 hover:bg-green-500/10 transition-all"
+              >
+                <WhatsAppIcon className="w-4 h-4" />
+              </a>
             </div>
           </div>
         </div>

@@ -159,8 +159,8 @@ const organizationSchema = {
     addressCountry: 'UG',
   },
   sameAs: [
-    'https://www.facebook.com/kingslanddistributors',
-    'https://www.instagram.com/kingslanddistributors',
+    'https://www.facebook.com/profile.php?id=61590770146071',
+    'https://www.instagram.com/kingslanddistributors/?hl=en',
   ],
 }
 
